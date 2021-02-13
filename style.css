@@ -57,3 +57,16 @@ section2 {
     border: 2px solid darkslategrey;
     width: 620px;
 }
+
+a:visited {
+    color:rgb(255, 2, 2);
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(2, 247, 2);
+}
+
+a:active {
+    color: black;
+}
