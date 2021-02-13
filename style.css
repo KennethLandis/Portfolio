@@ -1,0 +1,59 @@
+header, footer {
+    position: relative;
+    text-align: center;
+    background-color: darkslategrey;
+    color: rgb(255, 255, 255);
+    border: 2px solid darkslategrey;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.wrapper {
+    border: 3px solid darkslategrey;
+    margin-top: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    border-radius: 1%;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+#imageContainer {
+    display: block;
+    float: left;
+    margin-left: 30px;
+    width: 300px;
+}
+
+#textContainer1 {
+    display: block;
+    line-height: 2;
+    width: 620px;
+    height: 500px;
+    margin-left: 600px;
+    margin-top: 100px;
+}
+section1 , section2, section3{
+    font-size: 20px;
+}
+
+section2 {
+    line-height: 1.5;
+    border: 2px solid darkslategrey;
+    width: 620px;
+}
