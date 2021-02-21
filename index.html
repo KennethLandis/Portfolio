@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Kenneth Landis Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet" type="text/css" >
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -15,51 +15,84 @@
         <h3>Web Developer</h3>
     </header>
 
-    <!--Setting Image in container alongside introduction-->
+    <!--Intro with Photo-->
 
     <main>
-        <div id="imageContainer">
-            <img src="images/kenny.jpg" alt="photo of me" height="400" width ="300">
-        </div>
-        <div id="textContainer1" >
-            <article>
-                <h2>Hi, I'm Kenneth Landis</h2>
-                <p>I'm a full-stack Web Developer based out of Denton, Tx.<br> A few things I'm passionate about:</p>
-                    <ul>
-                        <li>Logical problem solving.</li>
-                        <li>Learning new skills.</li>
-                        <li>Working with peers with an improvement mindset.</li>
-                    </ul>
-                <p>Have a look around and <a href="#section3">contact me.</a>
-                </p>
+        <div class = "wrapper">
+
+            <article id="hello">
+                <div class="group">
+                    <div class="item">
+                        <img src="images/kenny.jpg" alt="photo of me" height="400" width ="300">
+                    </div>
+                <div  class ="item">
+                    <h2>Hi, I'm Kenneth Landis</h2>
+                    <p>I'm a full stack developer based out of Denton, Tx.  I'm passionate about creating top-tier solutions to you or your companies goals.</p>
+                    <p>I love to design and make things, and enjoy working with the client to tailor the project to their specifications. Have a look around and <a href="#contact">contact me.</a></p>
+                </div>
             </article>
+            </div>
         </div>
-    <hr>
 
-    <!--About me section inside bordered wrapper-->
+    <!--About me section-->
 
-        <article class = "center">
+        <article id ="about">
+            <div class="wrapper">
             <h2>About Me</h2>
-            <p class="wrapper">I love playing strategy games and reading books.  Solving a puzzle and watching a movie is one of my favorite saturday activities.<br>
+            <p>I love playing strategy games and reading books.  Solving a puzzle and watching a movie is one of my favorite saturday activities.<br>
                 <br>
             After high school I attended two years of college and found myself lost on where to continue. Over the next 12 year I experienced different industries and workplaces attempting to find something to be passionate about.  Web-development stood out as a career that provided the daily challenges my mind craved, as well as a meritocracy that rewards hardwork and quality product development<br>
             <br>
             After spending roughly 400 development hours familiarizing myself with a few languages and the logic of coding, I enrolled at Bloc/Thinkful to immerse myself in a journey toward software development as my new career!<br>
             If you're looking for a new developer that is excited to tackle problems and build meaningful solutions toward future endeavours, please reach out! I'm excited to join a motivated team to build software that paves the way toward your goals.
             </p>
+            </div>
         </article>
-    <hr>
+
+    <!--Portfolio Setup-->
+
+        <article id="portfolio">
+            <div class="wrapper">
+                <h4>Portfolio</h4>
+                <div class="group">
+                    <div class="item">
+                        <h3>Thing I built</h3>
+                        <p>I made a thing that does a thing that is super useful stuff for people.</p>
+                        <img src="images/placeholder.png" alt="placeholder" height="300" width="400">
+                    </div>
+                    <div class="item">
+                        <h3>Another Cool Project</h3>
+                        <p>I built this cool thing for some people who wanted it and it's awesome.</p>
+                        <img src="images/placeholder.png" alt="placeholder" height="300" width="400">
+                    </div>
+                    <div class="item">
+                        <h3>Latest thing I did</h3>
+                        <p>I worked very hard to develop this thing that plays the stuff.</p>
+                        <img src="images/placeholder.png" alt="placeholder" height="300" width="400">
+                    </div>
+                </div>
+            </div>
+        </article>
 
     <!--Contact Information and Links-->
 
-        <article id="section3" class ="center">
-            <h2>Contact Kenneth</h2>
-            <P>I'm excited to hear from you! Feel free to contact or follow me:<br></p>
-                <ol>
-                    <li><a href="https://github.com/KennethLandis" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/kenneth-landis-176834206/" target="_blank">Linkedin</a></li>
-                    <li><a href="mailto:Eightfletcher@msn.com">Email</a></li>
-                </ol>
+        <article id="contact">
+            <div class="wrapper">
+                <div class="group">
+                    <div class="item">
+                        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=denton,%20tx&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+                    </div>
+                <div class="item">
+                <h2>Contact Kenneth</h2>
+                <P>I'm excited to hear from you! Feel free to contact or follow me:<br></p>
+                    <ol>
+                        <li><a href="https://github.com/KennethLandis" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/kenneth-landis-176834206/" target="_blank">Linkedin</a></li>
+                        <li><a href="mailto:Eightfletcher@msn.com">Email</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
             </article>
     </main>
 

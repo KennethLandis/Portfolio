@@ -9,23 +9,9 @@ header, footer {
     border: 2px solid darkslategrey;
 }
 
-.center {
-    text-align: center;
-    margin: auto;
-}
-
-.wrapper {
-    border: 3px solid black;
-    margin-top: auto;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: darkslategrey;
-    color: whitesmoke;
-    border-radius: 1%;
-}
-
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(248, 248, 248);
+
 }
 
 h1 {
@@ -38,28 +24,49 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-
-
-/* Container for first section */
-
-#imageContainer {
-    display: block;
-    float: left;
-    margin-left: 30px;
-    width: 300px;
+h4 {
+    font-size: 48px;
+    text-align: center;
 }
 
-#textContainer1 {
-    display: block;
-    line-height: 2;
-    width: 620px;
-    height: 500px;
-    margin-left: 600px;
-    margin-top: 100px;
-}
-
-article {
+p {
     font-size: 20px;
+}
+
+img {
+    border-radius: 8px;
+}
+
+/* Main setup */
+
+.wrapper {
+    width: 100%;
+}
+
+/* Groups & Items (Mobile first)*/
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Updates for Desktop*/
+
+@media all and (min-width: 800px) {
+    .wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .group {
+        flex-direction: row;
+    }
+}
+
+
+.item {
+    flex: 1;
+    margin: 10px;
 }
 
 
@@ -78,7 +85,21 @@ a:active {
     color: black;
 }
 
-ol {
-    text-align: center;
-    list-style-position: inside;
+/* Articles */
+
+#hello {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#contact, #portfolio {
+    margin-bottom: 100px;
+}
+
+#about {
+    background-color: darkslategrey;
+    color: white;
+    margin: 100 px;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
