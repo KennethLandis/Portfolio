@@ -43,11 +43,26 @@ img {
     width: 100%;
 }
 
+.form-wrapper {
+    width: 90%;
+    margin-left: 30px;
+}
+
+#about .wrapper {
+    margin-left: 20px;
+    width: 80%;
+}
+
 /* Groups & Items (Mobile first)*/
 
 .group {
     display: flex;
     flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
 }
 
 /* Updates for Desktop*/
@@ -61,12 +76,10 @@ img {
     .group {
         flex-direction: row;
     }
-}
-
-
-.item {
-    flex: 1;
-    margin: 10px;
+    .form-wrapper {
+        width: 40%;
+        margin: auto;
+    }
 }
 
 
@@ -102,4 +115,31 @@ a:active {
     margin: 100 px;
     padding-bottom: 30px;
     padding-top: 10px;
+}
+
+/* Label Styles */
+
+form lable {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: grey;
+    font-family: arial;
+}
+
+form input[type=text] {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+form input, form textarea {
+    width:100%;
+}
+
+form textarea#form-message {
+    height: 4.75rem;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
