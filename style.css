@@ -80,6 +80,11 @@ img {
         width: 40%;
         margin: auto;
     }
+    #about .wrapper {
+        margin-left: auto;
+        width: 80%;
+    }
+
 }
 
 
