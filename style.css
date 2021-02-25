@@ -37,6 +37,34 @@ img {
     border-radius: 8px;
 }
 
+#portfolio img {
+    width: 100%;
+}
+
+
+/* Nav bar setup */
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
 /* Main setup */
 
 .wrapper {
@@ -53,6 +81,11 @@ img {
     width: 80%;
 }
 
+iframe {
+    width: 100%;
+}
+
+
 /* Groups & Items (Mobile first)*/
 
 .group {
@@ -63,6 +96,65 @@ img {
 .item {
     flex: 1;
     margin: 10px;
+}
+
+
+/* Label Styles */
+
+form lable {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: grey;
+    font-family: arial;
+}
+
+form input[type=text] {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    width:100%;
+}
+
+form textarea#form-message {
+    height: 4.75rem;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+/* Articles */
+
+#hello {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#contact, #portfolio {
+    margin-bottom: 100px;
+}
+
+#about {
+    background-color: darkslategrey;
+    color: white;
+    margin: 100 px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+/* Stylizying links */
+
+
+a:hover {
+    cursor: pointer;
+    color: rgb(2, 247, 2);
+}
+
+a:active {
+    color: black;
 }
 
 /* Updates for Desktop*/
@@ -85,66 +177,13 @@ img {
         width: 80%;
     }
 
+    img #portfolio {
+        width: 200px;
+    }
+
+    iframe {
+        width: 600px;
+    }
+
 }
 
-
-/* Stylizying links */
-
-a:visited {
-    color:rgb(255, 2, 2);
-}
-
-a:hover {
-    cursor: pointer;
-    color: rgb(2, 247, 2);
-}
-
-a:active {
-    color: black;
-}
-
-/* Articles */
-
-#hello {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-#contact, #portfolio {
-    margin-bottom: 100px;
-}
-
-#about {
-    background-color: darkslategrey;
-    color: white;
-    margin: 100 px;
-    padding-bottom: 30px;
-    padding-top: 10px;
-}
-
-/* Label Styles */
-
-form lable {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: grey;
-    font-family: arial;
-}
-
-form input[type=text] {
-    color: black;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-
-form input, form textarea {
-    width:100%;
-}
-
-form textarea#form-message {
-    height: 4.75rem;
-    margin-bottom: 20px;
-    font-size: 16px;
-}
